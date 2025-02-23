@@ -1,0 +1,28 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+/* Fullscreen container styles */
+.fullscreen-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1920px) {
+    .fullscreen-container > div {
+        transform-origin: top left;
+        transform: scale(calc(100vw / 1920));
+    }
+}
