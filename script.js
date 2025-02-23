@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 window.innerWidth / 1920,
                 window.innerHeight / 1080
             );
-            container.style.transform = `scale(${scale})`;
+            document.documentElement.style.setProperty('--scale', scale);
         }
     }
 
